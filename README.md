@@ -1,14 +1,26 @@
+# Podmínky if, else if
 
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
+1) Do  ```If()  ```zapisujeme vždy nějakou podmínku např. x > 0, když je pravdivá tak se provede
+ 	 kod v podmince
+ 2) Do ``` if else () ``` zapisujeme stejně jako do  ```if() ``` podmínku
+ 3) Když není ani jedna podmínka pravdivá, tak  program přejde do  ```else  ```a nebude se ptát znovu
+
+
+
 
 ```java
-public static void main(String[] args) {
-    int value = 1;
-    if (value > 1 && (value % 2) == 1 | (value / 2) == 0) {
-        System.out.println(“Im in!!”);
-    } else if (value = 1) {
-        System.out.println(“Almost there”);
-    } else {
-        System.out.println(“At least you tried!”);
-    }
-```
+int x = 1;
+int y = 2;
+int c = 3;
+
+if(x>=y && x>=c ) {
+     System.out.println( "x je nejvetsi" );
+ } else if(y>=x && y>=c){
+     System.out.println("y je nejvetsi");
+	 } else if(c>=x && c>=y) {
+	 System.out.println("c je nejvetsi");
+	 }
+	 else {
+     System.out.println( "cisla se rovnaji" );
+ }
+ ```
